@@ -1,0 +1,19 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=48mm,text={62mm,36mm},left=1.5mm,top=1pt]{geometry}
+\usepackage{ctexcap}
+\CTEXsetup[beforeskip={-23pt}]{chapter}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{makeidx}
+  \makeindex
+\pagestyle{plain}
+\begin{document}
+\setcounter{page}{5}
+\renewcommand*{\see}[2]{{\kaishu ¼û} #1}
+µÚ~5 Ò³£º¾ÅÕÂËãÊõ\index{¾ÅÕÂËãÊõ}
+
+\newpage
+\setcounter{page}{7}
+µÚ~7 Ò³£ºÁõ»Õ\index{Áõ»Õ|see{¾ÅÕÂËãÊõ}}
+
+\printindex
+\end{document}

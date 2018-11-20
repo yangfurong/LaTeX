@@ -1,0 +1,14 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=18mm,text={62mm,63mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{calc}
+\begin{document}
+\newcounter{Mycounter}
+\setcounter{Mycounter}{2}
+计数器 Mycounter 的初值是 2，%
+\setcounter{Mycounter}{\value{Mycounter}+5}
+加 5 后，其值为 \theMycounter。%
+\setlength{\parindent}{10.5pt+3pt*5}
+经过运算，长度数据命令 \verb"\parindent" 所表示的长度是：\the\parindent 。
+\end{document}

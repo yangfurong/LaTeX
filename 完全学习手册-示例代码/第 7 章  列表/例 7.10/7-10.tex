@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=34mm,text={62mm,63mm},left=1.5mm,top=2pt]{geometry}
+\usepackage[space]{ctex}
+\usepackage{calc,pifont}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\newcounter{local}
+\renewcommand\theenumi{\protect\setcounter{local}{171+\the\value{enumi}}\protect\ding{\value{local}}}
+\renewcommand\labelenumi{\theenumi}
+\begin{enumerate}
+\item 行星绕太阳运动的轨道是以太阳为焦点的椭圆。\label{aa}
+\item 行星与太阳的连线在相等时间内扫过相等的面积。\label{bb}
+\end{enumerate}
+其中 \ref{aa} 和 \ref{bb} 称为开普勒定律。
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=22mm,text={62mm,63mm},left=1.5mm,top=-3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{ifthen,calc}
+\begin{document}
+\newenvironment{Booklist}[1]{%
+\begin{list}{}{\vspace{6pt}\hrule width \textwidth height 1pt\vspace{5pt}
+\parsep\parskip \itemsep=0pt \topsep=0pt \partopsep\parskip
+\renewcommand{\makelabel}{\Booklistlabel}
+\settowidth{\labelwidth}{#1}\setlength{\leftmargin}{\labelwidth+\labelsep}}}
+{\vspace{5pt}\hrule width \textwidth height
+1pt\vspace{6pt}\end{list}}
+
+\newlength{\Itemwidth}
+\newcommand{\Booklistlabel}[1]{\tt\kaishu \settowidth{\Itemwidth}{#1}%
+\ifthenelse{\lengthtest{\Itemwidth > \labelwidth}}{%
+\makebox[\textwidth][l]{#1}}{#1}\hfill}
+
+\begin{Booklist}{数数数数数数数}
+\item[数值1 关系符 数值2] ...
+\item[...]...
+\end{Booklist}
+\end{document}

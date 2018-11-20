@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=26mm,text={60mm,69mm},left=2.0mm,top=3pt]{geometry}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\newcounter{Atte}
+\newenvironment{Notes}{\begin{list}{\heiti 注意 \arabic{Atte}.}{%
+\labelsep=1em\itemindent=3em%
+\leftmargin=0pt%
+\usecounter{Atte}}}{\end{list}}
+\begin{Notes}
+\item 转到 MS-DOS 提示符下，键入 SVPW，按 Enter 键。
+\item 按 Y，将显示 Enter Password，输入口令，按 Enter 键。
+\end{Notes}
+\end{document}

@@ -1,0 +1,23 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=33mm,text={62mm,50mm},left=1.5mm,top=3pt]{geometry}
+\usepackage{xcolor,ctex}
+\begin{document}
+\parindent=0pt
+\definecolorseries{mycolors}{rgb}{last}{red}{yellow}
+\resetcolorseries[5]{mycolors} \newcommand{\M}{\rule{6mm}{0mm}\rule{0mm}{2mm}}
+\newcommand{\R}{\colorbox{mycolors!!+}{\M}}
+\R\R\R\R\R\R\\[9pt]
+\resetcolorseries[5]{mycolors}
+\color{mycolors!!+}AA，
+\color{mycolors!!+}AA，
+\color{mycolors!!+}AA，
+\color{mycolors!!+}AA \\[9pt]
+\resetcolorseries[5]{mycolors}
+\textcolor{mycolors!!++}{颜色，}
+\textcolor{mycolors!!++}{颜色，}
+\textcolor{mycolors!!++}{颜色，}
+\textcolor{mycolors!!++}{颜色}\\[9pt]
+\colorbox{mycolors!![0]}{\M}
+\colorbox{mycolors!![3]}{\M}
+\colorbox{mycolors!![5]}{\M}
+\end{document}

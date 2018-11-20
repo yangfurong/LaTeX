@@ -1,0 +1,21 @@
+\documentclass[14pt,serif]{beamer}
+\usetheme[height=12mm]{Rochester}
+\useinnertheme[shadow]{rounded}
+\beamersetaveragebackground{black!10}
+\usepackage[space,noindent]{ctex}
+\linespread{1.0}
+\begin{document}
+\kaishu
+\begin{frame}
+\frametitle{圆角盒子}
+在~1673 年，法国数学家费马提出：\\[9pt]
+\setbeamercolor{myupcol}{fg=white,bg=purple}%
+\setbeamercolor{mylowcol}{fg=black,bg=pink}%
+\begin{beamerboxesrounded}[upper=myupcol,lower=mylowcol,shadow=true]{费马猜想}
+当~$n$ 是一个大于~2 的整数时，则\\
+\centerline{$x^{n}+y^{n}=z^{n}$}\\
+这个不定方程没有正整数解。
+\end{beamerboxesrounded}\vspace{9pt}
+1995 年英国数学家怀尔斯用反证法证明费马猜想完全可以成立。
+\end{frame}
+\end{document}

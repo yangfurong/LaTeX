@@ -1,0 +1,23 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=68mm,text={62mm,57mm},left=1.5mm,top=1pt]{geometry}
+\usepackage{ctexcap}
+\CTEXsetup[beforeskip={-23pt}]{chapter}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{makeidx}
+  \makeindex
+\pagestyle{plain}
+\begin{document}
+\setcounter{page}{5}
+第~5 页：...张衡\index{人名!张衡}...
+
+\clearpage\setcounter{page}{7}
+第~7 页：...北京\index{地名!北京}...
+
+\clearpage\setcounter{page}{9}
+第~9 页：...陈景润\index{人名!陈景润}...
+
+\clearpage\setcounter{page}{12}
+第~12 页：...乌鲁木齐\index{地名!乌鲁木齐}...
+
+\printindex
+\end{document}

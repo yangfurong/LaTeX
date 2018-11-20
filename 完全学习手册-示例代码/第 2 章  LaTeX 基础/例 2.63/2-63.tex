@@ -1,0 +1,20 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=22mm,text={62mm,63mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{ifthen,caption}
+\begin{document}
+\newcommand{\Figref}[1]{\ifthenelse{%
+\value{page}=\pageref{#1}}{%
+本页图~\ref{#1}}{%
+第~\pageref{#1}~页图~\ref{#1}}}
+
+\setcounter{page}{3}
+第 3 页：\captionof{figure}{\label{fig1}}
+
+\Figref{fig1}，\Figref{fig2}。
+
+\newpage
+\setcounter{page}{5}
+第 5 页：\captionof{figure}{\label{fig2}}
+\end{document}

@@ -1,0 +1,16 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=44mm,text={62mm,50mm},left=5.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{fancyvrb}
+\begin{document}
+\begin{Verbatim}[numbers=left,commandchars=\\\{\}]
+REAL FUNCTION TRIPPLE(NUM)
+IMPLICIT NONE
+        REAL NUM
+        TRIPPLE = NUM * 3
+        RETURN \label{verbtext}
+END
+\end{Verbatim}
+上例中第 \ref{verbtext} 行语句是返回主程序命令。
+\end{document}

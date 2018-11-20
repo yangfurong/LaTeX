@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=15mm,text={62mm,79mm},left=1.5mm,top=3pt]{geometry}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{dcolumn}
+\begin{document}
+\centering
+
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+\begin{tabular}{|d{3}|d{3}|>{$}d{3}<{$}|}\hline
+2.35x   & $ 2.35x$ & 2.35x   \\
+-126.1x & -126.1x  & -126.1x \\\hline
+\end{tabular}
+\end{document}

@@ -1,0 +1,10 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=11mm,text={62mm,20mm},left=1.5mm,top=0pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\begin{document}
+\newcommand{\mycmdD}[2][n]{%
+$#2_1,#2_2,\dots,#2_#1$}
+我们常把数列写作：\mycmdD{x}，或者写作：
+\mycmdD[m]{a}。
+\end{document}

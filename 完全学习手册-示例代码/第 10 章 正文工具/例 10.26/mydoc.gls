@@ -1,0 +1,10 @@
+\begin{theglossary}\glogroupJ
+
+\gloitem {\glosslabel{glo:jianxie}{简谐振动}}物体在与位移成正比的恢复力作用下，其水平位置附近按正弦规律所作的往复运动\relax
+\glodelim 
+		\glsnumformat{2}\delimT \gloskip \glogroupZ
+
+\gloitem {\glosslabel{glo:zhongli}{重力加速度}}由地心引力和地球自转引起的离心力的合力造成物体在真空中下落的加速度\relax
+\glodelim 
+		\glsnumformat{3}\delimT 
+\end{theglossary}

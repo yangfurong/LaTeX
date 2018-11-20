@@ -1,0 +1,34 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=37mm,text={65mm,36mm},left=0mm,top=1pt]{geometry}
+\usepackage[space]{ctex}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+ \DeclareCaptionFont{kai}{\kaishu}
+ \captionsetup{textfont=kai}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{longtable}
+\linespread{1.1}
+\renewcommand{\tablename}{\songti 表}
+\begin{document}
+\setcounter{chapter}{2}
+
+\begin{longtable}{lcr}
+\caption{常用激光器的特性}\\\hline 增益介质 & 功率 &
+\multicolumn{1}{c} {波长}\\\hline
+\endfirsthead
+\caption[]{常用激光器的特性(续)}\\
+\multicolumn{3}{r}{\footnotesize 接上页}\\
+\hline 增益介质 & 功率 & \multicolumn{1}{c}{波长}\\\hline\endhead
+\hline\multicolumn{3}{r}{%
+\footnotesize 接下页}\\\endfoot \hline\hline\endlastfoot
+HeNe         & 1mW    & 633nm\\
+Ar           & 10W    & 488nm\\
+CO$_{2}$     & 200W   & 0.01nm\\
+GaAs         & 10mW   & 840nm\\
+红宝石(QS)   & 100MW  & 694nm\\
+Nd:YAG       & 50W    & 0.001nm\\
+Nd:YAG(ML)   & 2kW    & 0.001nm\\
+Nd:玻璃      & 10TW   & 0.001nm\\
+Rh6G(ML)     & 10kW   & 600nm\\
+ArF          & 10MW   & 193nm\\
+\end{longtable}
+\end{document}

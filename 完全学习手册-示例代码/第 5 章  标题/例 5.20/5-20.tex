@@ -1,0 +1,16 @@
+\documentclass[twoside]{book}
+\usepackage[paperwidth=65mm,paperheight=73pt,text={63mm,210mm},left=3pt,top=-263pt]{geometry}
+\usepackage[space]{ctex}
+\usepackage{graphicx}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+\usepackage[facing=yes]{floatrow}
+\renewcommand{\figurename}{\songti 图}
+\begin{document}
+\setcounter{chapter}{2}
+\setcounter{figure}{2}
+\floatsetup{capbesideposition=right,facing=yes,capbesidewidth=25mm}
+\begin{figure}
+\fcapside{\caption{标题在插图的右侧}}
+{\includegraphics{TUG.pdf}}
+\end{figure}
+\end{document}

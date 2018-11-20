@@ -1,0 +1,24 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=46mm,text={62mm,80mm},left=1.5mm,top=5pt]{geometry}
+\usepackage[space]{ctex}
+\usepackage{amsmath}
+\usepackage[thmmarks,amsmath]{ntheorem}
+\begin{document}
+\songti
+\setcounter{chapter}{3}
+
+\theoremstyle{plain}\theoremseparator{:}
+\qedsymbol{$\diamondsuit$}
+\newtheorem{Definit}{定理}
+\begin{Definit}
+\begin{equation}
+\int^{z}_{z_{0}}f(z)dz=\mathit{\Phi}(z)-
+\mathit{\Phi}(z_{0})
+\end{equation}
+\begin{itemize}
+\item $f(z)$ 是解析函数
+\item $\mathit{\Phi}'(z)=f(z)$
+\item $z_{0},z$ 为 $D$ 内任意两点
+\end{itemize}\qed
+\end{Definit}
+\end{document}

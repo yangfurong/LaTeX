@@ -1,0 +1,20 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=48mm,text={62mm,36mm},left=1.5mm,top=1pt]{geometry}
+\usepackage{ctexcap}
+\CTEXsetup[beforeskip={-23pt}]{chapter}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{makeidx}
+  \makeindex
+\pagestyle{plain}
+\begin{document}
+\setcounter{page}{3}
+第~3 页：祖冲之\index{祖冲之|(textsf}
+
+\newpage\setcounter{page}{4}
+第~4 页：祖冲之\index{祖冲之}
+
+\newpage\setcounter{page}{5}
+第~5 页：祖冲之\index{祖冲之|)}
+
+\printindex
+\end{document}

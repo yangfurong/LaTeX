@@ -1,0 +1,31 @@
+\documentclass{book}
+\usepackage[paperwidth=148mm,paperheight=52mm,text={148mm,160mm},left=0mm,top=10pt]{geometry}
+\usepackage{ctexcap}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+  \DeclareCaptionFont{kai}{\kaishu}
+  \captionsetup{textfont=kai}
+\usepackage{graphicx,floatrow,subfig}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\setcounter{chapter}{2}
+\songti
+
+\floatsetup{subfloatrowsep=qquad}
+\captionsetup[subtable]{labelfont=bf,textfont=sl}
+\begin{table}[!h]
+\ttabbox{}{%
+\begin{subfloatrow}
+\ttabbox{\caption{技术规范}}{%
+\begin{tabular}{|c|c|c|}\hline
+规范      &  频率 & 速率    \\ \hline 802.11   &  2.4GHz & 2Mbps  \\ \hline
+802.11a &  5GHz & 54Mbps \\ \hline 802.11b &  2.4GHz & 11Mbps \\ \hline
+\end{tabular}}
+\ttabbox{\caption{实际应用}}{%
+\begin{tabular}{|c|c|c|c|}\hline
+~    & 802.11b & 蓝牙   & HomeRF \\ \hline
+频率 & 2.4GHZ  & 2.4GHZ & 2.4GHZ \\ \hline
+范围 & 100M    & 10M    & 50M    \\ \hline
+\end{tabular}}
+\end{subfloatrow}\caption{各种无线通信网络的技术数据}}
+\end{table}
+\end{document}

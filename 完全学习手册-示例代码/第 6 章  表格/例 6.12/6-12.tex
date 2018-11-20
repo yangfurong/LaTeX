@@ -1,0 +1,22 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=18mm,text={62mm,80mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{array}
+\begin{document}
+\centering
+
+\begin{tabular}{|cc|}\hline
+11 & \begin{tabular}[t]{|c|c|}\firsthline
+     22 & 33 \\
+     44 & 55 \\ \lasthline
+     \end{tabular}\\ \hline
+\end{tabular}
+{\extratabsurround=5pt
+\begin{tabular}{|cc|} \hline
+11 & \begin{tabular}[t]{|c|c|}\firsthline
+     22 & 33 \\
+     44 & 55 \\ \lasthline
+     \end{tabular}\\ \hline
+\end{tabular}}
+\end{document}

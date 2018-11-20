@@ -1,0 +1,18 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=27.5mm,text={60mm,30mm},left=2.5mm,top=0pt]{geometry}
+\usepackage[fancyhdr,fntef,nocap,space]{ctex}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage[framed,amsmath]{ntheorem}
+\begin{document}
+\theoremstyle{break}
+\theoremheaderfont{\heiti}
+\theorembodyfont{\kaishu}
+\theorempostskipamount=-15pt
+\newframedtheorem{important}{定理}
+\begin{important}[康托]\vspace{-2mm}
+假定 A 不是空集，那末
+$$card(A)<card(^{A}2)\leqno{\square}$$
+\end{important}
+\end{document}

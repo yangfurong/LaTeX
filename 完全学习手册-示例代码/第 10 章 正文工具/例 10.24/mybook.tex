@@ -1,0 +1,22 @@
+\documentclass{book}
+\usepackage[paperwidth=75mm,paperheight=55mm,text={72mm,45mm},left=1.5mm,top=1pt]{geometry}
+\usepackage{ctexcap}
+\CTEXsetup[beforeskip={-23pt}]{chapter}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{makeidx}
+  \makeindex
+\pagestyle{plain}
+\begin{document}
+\setcounter{page}{3}
+第~3 页：wang@sina.com\index{wang@sina.com}
+
+\newpage
+\setcounter{page}{4}
+第~4 页：zhang@pub.zjinfo.net\index{浙江*zhang@pub.zjinfo.net}
+
+\newpage
+\setcounter{page}{5}
+第~5 页：chen@sina.com\index{江苏*chen@sina.com}
+
+\printindex
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=46mm,text={62mm,80mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\begin{document}
+\centering
+\scriptsize
+\newcommand{\bb}[1]{\raisebox{-7ex}[0pt][0pt]{\shortstack{#1}}}
+\begin{tabular}{|c|c|c|c|}\hline
+\multicolumn{4}{|c|}{\parbox[c][9mm]{0pt}{}%
+\kaishu\bfseries 前 5 种化学元素的电子状态分布}\\\hline
+\bb{原子\\序数} & \bb{元素\\符号} &
+\multicolumn{2}{c|}{各电子层上的电子数} \\
+\cline{3-4}
+&  & K 层, $n=1$ & L 层, $n=2$ \\\cline{3-4}
+&  & $s$ 亚层    & $s$ 亚层 $p$ 亚层 \\
+&  & $l=0$       & $l=0$\quad $l=1$\\\hline
+1  & H           & 1    &   \\
+2  & He          & 2    &   \\\cline{2-3}
+3  & Li          & 2    & 1\qquad ~ \\
+4  & Be          & 2    & 2\qquad ~ \\
+5  & B           & 2    & 2\qquad 1\\\hline
+\end{tabular}
+\end{document}

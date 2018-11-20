@@ -1,0 +1,41 @@
+\documentclass{book}
+\usepackage[paperwidth=148mm,paperheight=90pt,text={130mm,210mm},left=9mm,top=-60pt]{geometry}
+\usepackage{ctexcap}
+
+\usepackage{titletoc}
+\titlecontents{figure}[12mm]{\kaishu}
+ {\contentslabel[\heiti 图~\thecontentslabel]{12mm}}{}
+ {\titlerule*[0.5pc]{$\cdot$}\contentspage[{\makebox[0pt][r]{\thecontentspage}}]}
+
+\linespread{1.1}%行距
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\renewcommand{\listfigurename}{\large 插图\vspace{-36pt}}
+
+\listoffigures
+
+\chapter{Please note}
+\setcounter{chapter}{2}
+\setcounter{page}{8}
+\begin{figure}[!ht]
+\centering
+\fbox{\Large\heiti 图形 1}\\
+\caption{自动控制系统框图}\medskip%
+\end{figure}
+
+\setcounter{chapter}{4}
+\chapter{33}\setcounter{page}{106}
+\begin{figure}[!ht]
+\centering
+\fbox{\Large\heiti 图形 1}\\
+\caption{简谐波~(Simple harmonic wave) 波形图}
+\end{figure}
+
+\clearpage\setcounter{page}{128}
+\begin{figure}[!ht]
+\centering
+\fbox{\Large\heiti 图形 1}\\
+\caption{单晶和多晶的磁畴结构}
+\end{figure}
+
+\end{document}

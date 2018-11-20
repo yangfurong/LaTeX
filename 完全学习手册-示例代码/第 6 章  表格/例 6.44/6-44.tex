@@ -1,0 +1,24 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=28.5mm,text={62mm,36mm},left=1.5mm,top=0pt]{geometry}
+\usepackage{ctexcap,graphicx}
+\usepackage[table]{xcolor}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+  \DeclareCaptionFont{kai}{\kaishu}
+  \captionsetup{textfont=kai}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\setcounter{chapter}{2}
+\songti
+\definecolorseries{mycolor}{rgb}{last}{green}{blue}
+\resetcolorseries[10]{mycolor}  \rowcolors{1}{mycolor!!}{mycolor!![2]}
+\begin{table}[!h]\centering
+\caption{各种广播的频带}
+\scalebox{1.25}[0.8]{%
+\begin{tabular}{ccc}
+\number\rownum & 广播方式 & 频带        \\
+\number\rownum & 调幅广播 & 535-1605kHz \\
+\number\rownum & 调频广播 & 88-108MHz   \\
+\number\rownum & 电视 VHF & 54-216MHz   \\
+\end{tabular}}
+\end{table}
+\end{document}

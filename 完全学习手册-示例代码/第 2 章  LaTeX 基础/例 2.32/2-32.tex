@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=16mm,text={62mm,40mm},left=1.0mm,top=5pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{fancybox}
+\begin{document}
+\noindent
+\newsavebox{\Fmbox}
+\newenvironment{Framepage}[2][c]{%
+\begin{lrbox}{\Fmbox}\begin{minipage}[#1]{#2}\CJKindent}
+{\end{minipage}\end{lrbox}\shadowsize=2pt \shadowbox{\usebox{\Fmbox}}}
+\begin{Framepage}{58mm}
+在小页环境中可以使用抄录命令和抄录环境。
+\end{Framepage}
+\end{document}

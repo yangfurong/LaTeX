@@ -1,0 +1,30 @@
+\documentclass[12pt]{beamer}
+\usepackage[space,noindent]{ctex}
+\usecolortheme{crane}
+\useinnertheme[shadow]{rounded}
+\beamersetaveragebackground{black!10}
+\setbeamertemplate{theorems}[numbered]
+\linespread{1.0}%行距
+\begin{document}
+\newtheorem{THeorem}{定理}
+\newtheorem{DEfinition}{定义}
+\newtheorem{PRoof}{证明}
+\theoremstyle{example}
+\newtheorem{EXemple}{示例}
+\begin{frame}
+\frametitle{\kaishu 定理类模块}
+\begin{DEfinition}
+有一个角是直角的三角形称为直角三角形。
+\end{DEfinition}
+\begin{THeorem}
+直角三角的斜边平方等于另两个边平方之和。
+\end{THeorem}
+\begin{PRoof}
+画一条通过点 A 和点 B 的线段 a。...\\
+这就证明了一个三角形的内角之和等于 180 度。\qed
+\end{PRoof}
+\begin{EXemple}
+$3x^{3}+2x^{2}+x+1=0$
+\end{EXemple}
+\end{frame}
+\end{document}

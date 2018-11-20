@@ -1,0 +1,20 @@
+\documentclass{book}
+\usepackage[paperwidth=148mm,paperheight=48mm,text={148mm,160mm},left=0mm,top=1pt]{geometry}
+\usepackage{ctexcap}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+  \DeclareCaptionFont{kai}{\kaishu}
+  \captionsetup{textfont=kai}
+\usepackage{graphicx,floatrow}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\setcounter{chapter}{2}
+\songti
+
+\begin{figure}[!h]
+\begin{floatrow}
+\ffigbox{\caption{SRR 的外形示意图}}{\includegraphics{fig1.pdf}}
+\ffigbox{\caption{SRR 的等效模型，其中~D2 为等效环内径，S 是螺线间距。}}{%
+\includegraphics[height=32mm]{fig18.pdf}}
+\end{floatrow}
+\end{figure}
+\end{document}

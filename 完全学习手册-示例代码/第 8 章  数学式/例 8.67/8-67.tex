@@ -1,0 +1,11 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=30mm,text={62mm,60mm},left=1.5mm,top=-15pt]{geometry}
+\usepackage{amsmath}
+\begin{document}
+\begin{eqnarray*}
+\sqrt{a} \sqrt{y}\sqrt{f}\sqrt{a^{3}_{j}}\\ % "as is"
+\sqrt{\smash[b]{a}}\sqrt{\smash[b]{y}}\sqrt{\smash[b]{f}}\sqrt{\smash[b]{a^{3}_{j}}}\\
+\sqrt{\smash[t]{a}}\sqrt{\smash[t]{y}}\sqrt{\smash[t]{f}}\sqrt{\smash[t]{a^{3}_{j}}}\\
+\sqrt{\smash{a}} \sqrt{\smash{y}} \sqrt{\smash{f}} \sqrt{\smash{a^{3}_{j}}}
+\end{eqnarray*}
+\end{document}

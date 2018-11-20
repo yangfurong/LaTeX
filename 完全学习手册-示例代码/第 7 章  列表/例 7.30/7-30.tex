@@ -1,0 +1,26 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=35mm,text={62mm,69mm},left=1.5mm,top=3pt]{geometry}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+
+\begin{document}
+\setcounter{chapter}{6}
+
+\makeatletter
+\newcounter{Educt}[chapter] \renewcommand\theEduct{\thechapter.\arabic{Educt}}
+\newenvironment{Educt}{\vspace{-2.5ex}\small\sffamily%
+\begin{list}{}{\leftmargin=0.04\linewidth\rightmargin=\leftmargin}\item[]%
+\rule{\linewidth}{1pt}\nopagebreak\par\vspace{-1ex}%
+\refstepcounter{Educt}\renewcommand{\@currentlabel}{{\heiti 推论} \theEduct}%
+{\heiti 推论 \theEduct}\quad}{\nopagebreak\par\nopagebreak%
+\rule[0.5\baselineskip]{\linewidth}{1pt}\vspace{-3ex}%
+\end{list}}
+\makeatother
+超限归纳法可用\ref{educt:ordinal} 的形式表达：
+\begin{Educt}\label{educt:ordinal}
+假定 $\alpha$ 是一个序数，$\phi\in A\subset
+ \alpha$，那么存在序数 $\beta$ 使 $\xi\in A$
+ 对所有的 $\xi<\beta$ 成立，但是
+$\beta\notin A$。
+\end{Educt}
+\end{document}

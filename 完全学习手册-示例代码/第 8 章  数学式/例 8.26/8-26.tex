@@ -1,0 +1,19 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=41mm,text={62mm,80mm},left=1.5mm,top=3pt]{geometry}
+\usepackage[space]{ctex}
+\usepackage{amsmath}
+\begin{document}
+\setcounter{chapter}{2}
+
+\noindent
+在公式 \eqref{eq:parent} 中
+\begin{subequations}\label{eq:parent}
+\begin{align}
+a & =b+c \\ d & =a+f \label{eq:sub2}
+\end{align}
+子公式 \eqref{eq:sub2} 也可写作
+\begin{equation}
+d=b+c+f
+\end{equation}
+\end{subequations}
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=52mm,text={62mm,80mm},left=1.5mm,top=-10pt]{geometry}
+\usepackage{ctexcap,threeparttable}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+  \DeclareCaptionFont{kai}{\kaishu}
+  \captionsetup{textfont=kai}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\setcounter{chapter}{3}
+\setcounter{table}{5}
+\centering
+\songti
+
+\begin{threeparttable}
+\caption{\kaishu 全世界的各种移动通信系统}
+\begin{tabular}{ll}\hline
+AMPS\tnote{a} & 移动电话服务系统\\
+GSM\tnote{b}  & 全球移动通讯系统\\
+CDMA\tnote{b} & 码分多址通信系统\\
+NMT\tnote{a}  & 北欧移动电话系统\\\hline
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item[a] 贝尔实验室于~1969 年开始研究，1983 年投入使用。
+\item[b] 数字技术。
+\end{tablenotes}
+\end{threeparttable}
+\end{document}

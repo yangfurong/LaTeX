@@ -1,0 +1,18 @@
+\documentclass{book} %
+\usepackage[paperwidth=65mm,paperheight=27.5mm,text={60mm,30mm},left=5pt,top=50pt]{geometry}
+\usepackage[space]{ctex}
+\usepackage{amsmath} %公式处理
+\usepackage{amssymb} %
+\usepackage{framed}
+\usepackage{pstricks}
+\usepackage[framed,thmmarks,amsmath]{ntheorem}
+\begin{document}
+\theoremstyle{changebreak}
+\theoremsymbol{\rule{1ex}{1ex}}
+\def\theoremframecommand{%
+\psshadowbox[linecolor=black]}
+\newshadedtheorem{MostImportant}{公理}
+\begin{MostImportant}[Important]
+对于任何事物 $x$ 和 $y$，都存在着一个集 $\{x,y\}$，$\{x,y\}$的仅有的元素是 $x$ 和 $y$。
+\end{MostImportant}
+\end{document}

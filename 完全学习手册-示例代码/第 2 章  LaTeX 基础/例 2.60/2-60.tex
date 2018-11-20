@@ -1,0 +1,14 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=18mm,text={62mm,63mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{calc}
+\begin{document}
+\parindent=0pt
+\newlength{\Len} \Len=2pt plus 2pt minus 2pt
+\the\Len\\
+\setlength{\Len}{\Len/2}
+\the\Len\\
+\setlength{\Len}{\Len*3}
+\the\Len
+\end{document}

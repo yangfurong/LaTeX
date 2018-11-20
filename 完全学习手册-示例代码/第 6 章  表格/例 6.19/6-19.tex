@@ -1,0 +1,21 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=39mm,text={62mm,80mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{multirow,bigstrut}
+\begin{document}
+\centering
+
+\renewcommand{\multirowsetup}{\centering}
+\begin{tabular}{|l|r|r|}\hline
+\multirow{3}[2]{12mm}{行星} & \multicolumn{2}{p{29mm}|}%
+{\centering 与太阳的距离 \\ (million km)}
+\bigstrut[t] \\ \cline{2-3}
+& \multicolumn{1}{c|}{最远点}
+& \multicolumn{1}{c|}{最近点}
+\bigstrut[t] \\ \hline
+天王星 & 3011.0 & 2740.0 \bigstrut[t] \\
+金星   & 109.0  & 107.6 \\
+地球   & 152.6  & 147.4 \\ \hline
+\end{tabular}
+\end{document}

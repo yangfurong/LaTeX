@@ -1,0 +1,13 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=48mm,text={62mm,160mm},left=1.5mm,top=-60pt]{geometry}
+\usepackage{ctexcap}
+\begin{document}
+\newenvironment{Abstract}[2][2em]{%
+\heiti\chapter*{摘 要}\list{}{%
+\itemindent=#1 \listparindent=\itemindent%
+\leftmargin=#2 \rightmargin=\leftmargin%
+\parsep=0pt}\kaishu\item}{\endlist}
+\begin{Abstract}[1.5em]{2.5em}
+虽然无理数起源于几何学，但负数和复数都是起源于代数学。
+\end{Abstract}
+\end{document}

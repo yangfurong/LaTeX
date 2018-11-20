@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=7mm,text={62mm,50mm},left=5.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{ifthen,calc}
+\begin{document}
+%% \time=368  % 可以用这条命令设置时间
+
+\newcounter{Hour}\newcounter{Minute}
+\newcommand{\Showtime}{\setcounter{Hour}{\time/60}%
+\setcounter{Minute}{\time-\value{Hour}*60}\theHour:%
+\ifthenelse{\value{Minute}<10}{0}{}%
+\theMinute}
+当前的时间是 \Showtime。
+\end{document}

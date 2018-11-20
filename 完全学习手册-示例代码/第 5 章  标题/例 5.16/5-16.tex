@@ -1,0 +1,22 @@
+\documentclass{book} %
+\usepackage[paperwidth=65mm,paperheight=120pt,text={62mm,51mm},left=1.5mm,top=-6mm]{geometry}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+\begin{document}
+\songti
+\renewcommand{\tablename}{表}
+\setcounter{chapter}{2}
+\setcounter{table}{5}
+
+\begin{table}
+\caption{热反应数据表}
+\centering
+. . .
+\end{table}
+\begin{table}\ContinuedFloat
+\caption{热反应数据表 (续)}
+\centering
+. . .
+\end{table}
+\end{document}

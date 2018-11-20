@@ -1,0 +1,10 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=13mm,text={62mm,40mm},left=1.5mm,top=5pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\begin{document}
+\newsavebox{\Mysquare}
+\sbox{\Mysquare}{\fboxrule=1pt \framebox{\rule{7mm}{0pt}\rule{0pt}{7mm}}}
+\usebox{\Mysquare}
+\usebox{\Mysquare}
+\end{document}

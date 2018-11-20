@@ -1,0 +1,24 @@
+\documentclass{book}
+\usepackage[paperwidth=148mm,paperheight=55mm,text={148mm,160mm},left=0mm,top=10pt]{geometry}
+\usepackage{ctexcap}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+  \DeclareCaptionFont{kai}{\kaishu}
+  \captionsetup{textfont=kai}
+\usepackage{graphicx,floatrow,subfig}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\setcounter{chapter}{2}
+\songti
+
+\begin{figure}[!h]
+\captionsetup{labelsep=newline}
+\floatsetup{capbesideposition={right,center},facing=yes}
+\captionsetup[subfigure]{labelformat=brace,textfont=md,labelfont=up}
+\fcapside[\FBwidth]{}{{%
+\begin{subfloatrow}
+\ffigbox[\FBwidth]{\caption{S 参数曲线}}{\includegraphics{fig25.pdf}}
+\ffigbox[\FBwidth]{\caption{CPW 的谐振曲线}}{\includegraphics{fig22.pdf}}
+\end{subfloatrow}}
+\caption{S 参数曲线与 CPW 的谐振曲线比较}}\vspace{0.5mm}
+\end{figure}
+\end{document}

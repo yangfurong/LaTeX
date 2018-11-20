@@ -1,0 +1,78 @@
+
+{   \itshape \large 
+    \raggedleft
+    ``Live life to the fullest, and focus on the positive.'' \\
+    --- Matt Cameron \\
+}
+\section{Basic Introduction of \TeX{} and \LaTeX}
+
+\TeX{} is a typesetting software program which was created by \index{Donald E.Knuth.} 
+It is able to generate high-quality printable documents. The core philosophy of 
+\TeX{} is ``What You See Is What You Mean (WYSIWYM)'', which makes writers more 
+focus on contents. The way of using \TeX{} to make a document is somewhat similar
+to programming, writing files which consist of commands and texts under 
+specific grammar rules and then compiling these files to a printable document.
+
+%TODO: unset the indent
+In order to make \TeX{} eaisier to use, \index{Dr.~Lamport} developed an extendable macro 
+library based on the original \TeX{}, which is the \LaTeX.
+
+%Typical work-flow of using \LaTeX
+
+
+\section{Grammar Structure of \LaTeX}
+
+%command
+
+%text
+
+\section{Files Organization of \LaTeX}
+
+%main file
+
+%input and include
+
+\section{Encoding}
+\section{Chinese Support}
+\section{Brief Introduction of Symbols}
+\section{Miscs}
+\subsection{Text Emphasis}
+\underline{This is an example of \textbackslash underline.} \\
+\emph{This is an example of \textbackslash emph}
+\subsection{Space, Line, Paragraph and Page Control}
+\subsubsection{Spaces}
+\~{}: \LaTeX{} does not break a line from the position of \~{}. 
+See the difference between Prof. X and Prof.~X.
+
+\subsubsection{Lines}
+\textbf{\textbackslash newline} and \textbf{\textbackslash \textbackslash} are used
+for breaking \newline lines.
+
+\subsubsection{Paragraphs}
+\textbf{\textbackslash par} and a empty line are used for starting a new 
+\par 
+paragraph. 
+
+
+BTW, multiple successive empty lines are considered as one.
+
+\subsubsection{Pages}
+Now, use \textbf{\textbackslash newpage} or \textbf{\textbackslash clearpage} to 
+open a new page.
+
+\section{XXX}
+\lipsum
+
+Test index.
+\index{Test@\textsf{""Test}|(textbf}
+\index{Test@\textsf{""Test}!sub@"|sub"||see{Test}}
+\newpage
+Test index.
+\newpage
+Test index.
+\index{Test@\textsf{""Test}|)textbf}
+\newpage
+Test index.
+
+
+\newpage

@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=31mm,text={62mm,63mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{ifthen}
+\begin{document}
+\newenvironment{Theorem}[1][]{\begin{quote}\textbf{定理\ifthenelse{%
+\equal{#1}{}}{}{：#1}}\par}{\end{quote}}
+\begin{Theorem}
+    ...
+\end{Theorem}
+\begin{Theorem}[极限运算]
+    ...
+\end{Theorem}
+\end{document}

@@ -1,0 +1,20 @@
+\documentclass[openany]{book}
+\usepackage[paperwidth=148mm,paperheight=54mm,text={143mm,40mm},left=2.5mm,top=5pt]{geometry}
+\usepackage{ctexcap}
+\CTEXsetup[beforeskip={-23pt}]{chapter}
+\renewcommand{\rmdefault}{ptm}
+\pagestyle{plain}
+\begin{document}
+\parindent=0pt
+
+...可参考~\cite{KANAMOPI}。\\
+...可参考~\cite{Liu}，...\\
+...可参考~\cite{KANAMOPI,Liu} ...\\
+...可参考~\cite[第~5--7~页]{Liu}。
+
+\begin{thebibliography}{KANAMOPI}
+\bibitem[KANAMOPI]{KANAMOPI} KANAMOPI H. Shaking without quaking [J]. Science,
+1998, 279(5359): 2063-2064.
+\bibitem{Liu} 刘武, 郑良, 姜础. 元谋古猿牙齿测量数据的统计分析及其在分类研究上的意义 [J]. 科学通报, 1999, 44(23): 2481-2488.
+\end{thebibliography}
+\end{document}

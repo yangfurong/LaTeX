@@ -1,0 +1,12 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=11mm,text={62mm,20mm},left=1.5mm,top=0pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\begin{document}
+\newcommand{\lvec}{}  \newcommand{%
+\DEFlvec}[2]{\renewcommand{\lvec}[1][#2]{\ensuremath{#1_1+\cdots+#1_{##1}}}}
+\DEFlvec{x}{n}
+Default: $\lvec \neq \lvec[k]$ \par
+\DEFlvec{y}{i}
+Now: $\lvec \neq \lvec[k]$
+\end{document}

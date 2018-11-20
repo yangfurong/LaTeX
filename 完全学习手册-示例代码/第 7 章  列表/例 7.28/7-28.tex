@@ -1,0 +1,17 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=28mm,text={60.5mm,69mm},left=2.0mm,top=3pt]{geometry}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{calc}
+
+\begin{document}
+\newenvironment{Description}[1]{\begin{list}{}{\renewcommand\makelabel[1]{%
+\textsl{##1}\hfil}\settowidth\labelwidth{\makelabel{#1}}\itemsep=-5pt%
+\setlength\leftmargin{%
+\labelwidth+\labelsep}}}{\end{list}}
+\begin{Description}{SPACETRACK}
+\item[APLL] Automatic Phase-Locked Loop 自动锁相环
+\item[GPS] Global Positioning System 全球定位系统
+\item[SPACETRACK] Space Tracking 空间跟踪
+\end{Description}
+\end{document}

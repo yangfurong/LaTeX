@@ -1,0 +1,17 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=32mm,text={62mm,40mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\begin{document}
+\makeatletter
+\renewcommand{\verbatim@font}{\sffamily\slshape\small}
+\makeatother
+\begin{verbatim}
+REAL FUNCTION TRIPPLE(NUM)
+IMPLICIT NONE
+        REAL NUM
+        TRIPPLE = NUM * 3
+        RETURN
+END
+\end{verbatim}
+\end{document}

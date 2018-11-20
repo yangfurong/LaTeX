@@ -1,0 +1,25 @@
+\documentclass{book}
+\usepackage[paperwidth=148mm,paperheight=45mm,text={148mm,160mm},left=0mm,top=5pt]{geometry}
+\usepackage{ctexcap}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+  \DeclareCaptionFont{kai}{\kaishu}
+  \captionsetup{textfont=kai}
+\usepackage{graphicx,floatrow}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\setcounter{chapter}{2}
+\songti
+
+\tabcolsep=9pt\floatsetup{floatrowsep=fill}
+\begin{figure}[!h]
+\begin{floatrow}\CenterFloatBoxes
+\ffigbox[1.2\FBwidth]{\caption{SRR 的等效电路图}}{\includegraphics{fig2.pdf}}
+\killfloatstyle
+\ttabbox{\caption{802.11b 网络的技术数据}}{%
+\begin{tabular}{|c|c|c|}\hline
+规范    &   频率  &  速率   \\\hline
+802.11b &  2.4GHz &  11Mbps \\\hline
+\end{tabular}}
+\end{floatrow}
+\end{figure}
+\end{document}

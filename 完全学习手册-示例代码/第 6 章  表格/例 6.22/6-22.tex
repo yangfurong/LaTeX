@@ -1,0 +1,37 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=39mm,text={65mm,39mm},left=0mm,top=3pt]{geometry}
+\usepackage[space]{ctex}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+ \DeclareCaptionFont{kai}{\kaishu}
+ \captionsetup{textfont=kai}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{supertabular}
+\renewcommand{\tablename}{\songti 表}
+\linespread{1.1}
+
+\begin{document}
+\setcounter{chapter}{2}
+
+\begin{center}
+\topcaption{常用激光器的特性}
+\tablefirsthead{\hline\multicolumn{1}{c}{增益介质} & %
+   \multicolumn{1}{c}{功率} & \multicolumn{1}{c}{波长} \\\hline}
+\tablehead{\multicolumn{3}{l}{\small 接上页}\\\hline%
+   \multicolumn{1}{c}{增益介质} & \multicolumn{1}{c}{功率} & \multicolumn{1}{c}{波长} \\\hline}
+\tabletail{\hline\multicolumn{3}{r}{\small 接下页}\\}
+\tablelasttail{\hline}
+
+\begin{supertabular}{p{20mm}p{13mm}p{13mm}}
+HeNe         & 1mW    & 633nm\\
+Ar           & 10W    & 488nm\\
+CO$_{2}$     & 200W   & 0.01nm\\
+GaAs         & 10mW   & 840nm\\
+红宝石(QS)   & 100MW  & 694nm\\
+Nd:YAG       & 50W    & 0.001nm\\
+Nd:YAG(ML)   & 2kW    & 0.001nm\\
+Nd:玻璃      & 10TW   & 0.001nm\\
+Rh6G(ML)     & 10kW   & 600nm\\
+ArF          & 10MW   & 193nm\\
+\end{supertabular}
+\end{center}
+\end{document}

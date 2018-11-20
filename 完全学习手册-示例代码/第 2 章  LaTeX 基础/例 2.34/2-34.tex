@@ -1,0 +1,15 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=21mm,text={62mm,40mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\begin{document}
+\setcounter{chapter}{2}
+\setcounter{section}{4}
+\setcounter{subsection}{5}
+\setcounter{page}{68}
+\subsection{书签与引用}
+
+%% 注：以上是假设下例所在页的页码和该页所属章节的序号。
+
+有关交叉引用方面的问题\label{text:cross}可以参考本书第 \pageref{text:cross} 页第 \ref{text:cross} 节的介绍。
+\end{document}

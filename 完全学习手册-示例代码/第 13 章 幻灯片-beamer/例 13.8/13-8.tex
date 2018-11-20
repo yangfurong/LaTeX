@@ -1,0 +1,26 @@
+\documentclass[table,14pt,xcolor=svgnames]{beamer}
+\usepackage[space,noindent]{ctex}
+\usetheme[height=12mm]{Rochester}
+\beamersetaveragebackground{black!10}
+\renewcommand{\tablename}{表}
+\setbeamerfont{caption name}{shape=\heiti}
+\setbeamertemplate{caption}[numbered]
+\linespread{1.0}
+\begin{document}
+\kaishu
+\begin{frame}
+\frametitle{表格}
+\begin{table}
+\extrarowheight=7pt
+\rowcolors{1}{DeepSkyBlue}{DodgerBlue}
+\caption{各种移动通信系统的比较}
+\begin{tabular}{llll}
+ ~       & 2G       & 2.5G     & 3G       \\
+信号类型 & 模拟     & 数字     & 数字     \\
+交换方式 & 电路交换 & 分组交换 & 分组交换 \\
+提供服务 & 短信     & 网络     & 多媒体   \\
+传输速率 & 14Kb     & 144Kb    & 2000Kb \\\hline
+\end{tabular}
+\end{table}
+\end{frame}
+\end{document}

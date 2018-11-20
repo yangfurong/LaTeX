@@ -1,0 +1,29 @@
+\documentclass[openany]{book}
+\usepackage[paperwidth=65mm,paperheight=69mm,text={63mm,57mm},left=3pt,top=5pt]{geometry}
+\usepackage{ctexcap}
+\CTEXsetup[beforeskip={-23pt}]{chapter}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[pdftex,pagebackref,colorlinks]{hyperref}
+\pagestyle{plain}
+\begin{document}
+\setcounter{page}{12}
+HA\cite{Hawking}
+
+\newpage\setcounter{page}{23}
+YC\cite{Y.Cao3}
+
+\newpage\setcounter{page}{24}
+HA\cite{Hawking}
+
+\newpage\setcounter{page}{35}
+YC\cite{Y.Cao3}
+
+\newpage\setcounter{page}{47}
+YC\cite{Y.Cao3}
+
+\begin{thebibliography}{1}
+\bibitem{Hawking} 史蒂芬~$\cdot$ 霍金，《时间简史》，科学技术出版社，1994 年。\par
+\bibitem{Y.Cao3}E. J. Denlinger, ``Losses of microstrip lines," \textit{IEEE Trans Microwave Theory Tech}., vol. MTT-28, pp. 513-522, June 1980.\par
+\end{thebibliography}
+
+\end{document}

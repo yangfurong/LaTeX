@@ -1,0 +1,18 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=12mm,text={62mm,63mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{ifthen}
+\begin{document}
+\newcommand{\Eng}[1]{\arabic{#1}\textsuperscript{%
+\ifthenelse{\value{#1}=1}{st}{%
+\ifthenelse{\value{#1}=2}{nd}{%
+\ifthenelse{\value{#1}=3}{rd}{%
+\ifthenelse{\value{#1}<20}{th}}{}}}}}
+
+
+\setcounter{section}{2}     % 假设下例所在节的序数
+\setcounter{subsection}{16} % 假设下例所在小节的序数
+
+This is the \Eng{subsection} subsection in the \Eng{section} section.
+\end{document}

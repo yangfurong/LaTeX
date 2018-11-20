@@ -1,0 +1,17 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=21mm,text={62mm,63mm},left=1.5mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\begin{document}
+\newcounter{Exam}[chapter]
+\renewcommand{\theExam}{\thechapter.\arabic{Exam}}
+\newenvironment{Example}{{\noindent\sc Example \stepcounter{Exam}\theExam}%
+\\[-2ex]\rule{\linewidth}{0.8pt}\\}{%
+\nopagebreak\\*\rule{\linewidth}{0.8pt}}
+
+\setcounter{chapter}{2} %% 假设该环境位于第2章中
+
+\begin{Example}
+Suppose a set of data points ...
+\end{Example}
+\end{document}

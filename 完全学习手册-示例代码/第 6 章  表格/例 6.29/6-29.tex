@@ -1,0 +1,22 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=71mm,text={62mm,79mm},left=1.5mm,top=3pt]{geometry}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{booktabs}
+\begin{document}
+\centering
+\begin{tabular}{cccc}\toprule
+~ & \multicolumn{3}{c}{降雨天气(天)} \\
+\cmidrule{2-4}\morecmidrules\cmidrule{2-4}
+月份 & 小雨 & 中雨 & 大雨 \\ \midrule
+1    & 2    & 1    & 0 \\
+\addlinespace[7pt]\midrule
+2    & 3    & 2    & 1 \\
+\specialrule{1pt}{7pt}{7pt}
+3    & 4    & 2    & 2 \\ \midrule
+4    & 4    & 3    & 3 \\[7pt]\midrule
+5    & 5    & 3    & 3 \\
+\midrule\addlinespace[7pt]
+合计 & 18   & 11   & 9 \\ \bottomrule
+\end{tabular}
+\end{document}

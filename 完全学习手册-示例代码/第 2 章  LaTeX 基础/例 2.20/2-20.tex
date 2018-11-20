@@ -1,0 +1,11 @@
+\documentclass{book}
+\usepackage[paperwidth=72mm,paperheight=34mm,text={61mm,40mm},left=9.0mm,top=3pt]{geometry}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[space]{ctex}
+\usepackage{graphicx}
+\begin{document}
+\noindent
+\makebox[0pt][r]{\rotatebox{90}{%
+\makebox[0pt][r]{零宽度盒子}}%
+\quad}\qquad 尽管对象仍然被正确地排版，但系统认为它的宽度为零，与其前面的或后面的文本排版无关，从而造成相互重叠。通常这种现象显然不正常，但有时却可利用零宽度盒子的这一特点，制作出多种页面特效。
+\end{document}

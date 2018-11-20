@@ -1,0 +1,28 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=140pt,text={62mm,51mm},left=1.5mm,top=0mm]{geometry}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+\begin{document}
+\renewcommand{\figurename}{图}
+\setcounter{chapter}{3}
+\setcounter{figure}{4}
+\songti
+
+\renewcommand\theContinuedFloat{\alph{ContinuedFloat}}
+\begin{figure}\ContinuedFloat*
+\centering
+. . .
+\caption{热反应图之一}
+\end{figure}
+\begin{figure}\ContinuedFloat
+\centering
+. . .
+\caption{热反应图之二}
+\end{figure}
+\begin{figure}\ContinuedFloat
+\centering
+. . .
+\caption{热反应图之三}
+\end{figure}
+\end{document}

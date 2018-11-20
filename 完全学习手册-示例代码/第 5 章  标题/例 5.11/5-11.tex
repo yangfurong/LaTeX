@@ -1,0 +1,12 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=22mm,text={62mm,70mm},left=1.5mm,top=0pt]{geometry}
+\usepackage{ctexcap}
+\renewcommand{\rmdefault}{ptm}
+\begin{document}
+\setcounter{chapter}{2}
+
+\CTEXsetup[name={第~,~章},number={\arabic{chapter}},nameformat+={\Large},%
+titleformat+={\Large},beforeskip={0pt\hrule height1pt \vspace{1pt}\hrule},%
+afterskip={-1mm\dotfill\vspace{5mm}}]{chapter}
+\chapter{天线增益}
+\end{document}

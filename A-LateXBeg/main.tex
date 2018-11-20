@@ -1,0 +1,98 @@
+\documentclass[a4paper, 11pt, twoside]{report}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage[margin=28mm]{geometry}
+\usepackage{makeidx}
+\usepackage{lipsum}
+\usepackage{array}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\makeindex
+
+\title{Notes of Learning \LaTeXe}
+\author{Smile\thanks{UPMC} and Sob\thanks{UCAS}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    This report is introducing some random knowledge which is mostly useless for 
+    .....
+\end{abstract}
+
+\tableofcontents
+
+\chapter*{Preamble}
+\addcontentsline{toc}{chapter}{Preamble}
+The only purpose of this ``Preamble'' chapter appearing here is to test 
+\textbf{\textbackslash addcontentsline}
+
+\chapter{8th November}
+\input{ch1.tex}
+\chapter{15th November}
+\input{ch2.tex}
+
+\blinddocument
+
+\chapter{Heading on Level 0 (chapter)}
+\blindtext
+\section{Heading on Level 1 (section)}
+\blindtext
+\subsection{Heading on Level 2 (subsection)}
+\blindtext
+\subsubsection{Heading on Level 3 (subsubsection)}
+\blindtext
+\paragraph{Heading on Level 4 (paragraph)}
+\blindtext
+\subparagraph{Heading on Level 5 (subparagraph)}
+\blindtext
+
+\section{Lists}
+\subsection{Example for list (itemize)}
+\begin{itemize}
+    \item First;
+    \item Second;
+    \item Third;
+    \item Fourth.
+\end{itemize}
+
+\subsection*{Example for list (4*itemize)}
+\begin{itemize}
+    \item First in the first level;
+        \begin{itemize}
+            \item First in the second level;
+                \begin{itemize}
+                    \item First in the 3rd Level;
+                        \begin{itemize}
+                            \item First in the 4th level;
+                            \item Second in the 4th level;
+                        \end{itemize}
+                    \item Second in the 3rd level;
+                \end{itemize}
+            \item Second in the second level.
+        \end{itemize}
+    \item Second in the first level.
+\end{itemize}
+
+\subsection{Example for list (enumerate)}
+\begin{enumerate}
+    \item do I have to generate that many items???
+    \item Two;
+    \item Three in French is ``Toi''. :)
+\end{enumerate}
+
+\subsection*{Example for list (4*enumerate)}
+
+\chapter{22nd November}
+
+\chapter{29th November}
+
+\chapter{6th December}
+
+\appendix
+\chapter{Random Thoughts}
+
+\printindex
+\end{document}

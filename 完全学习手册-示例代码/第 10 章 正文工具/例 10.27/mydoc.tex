@@ -1,0 +1,26 @@
+\documentclass[oneside,openany]{book}
+\usepackage[paperwidth=65mm,paperheight=100mm,text={62mm,90mm},left=0mm,top=1pt]{geometry}
+\usepackage{ctexcap}
+\CTEXsetup[beforeskip={-23pt}]{chapter}
+\renewcommand{\rmdefault}{ptm}
+\usepackage[header,cols=3]{glossary}
+  \makeglossary
+\pagestyle{plain}
+\begin{document}
+
+\setcounter{page}{2}
+第~2 页：简谐振动\glossary{name={简谐振动},%
+description={物体在与位移成正比的恢复力作用下，其水平位置附近按正弦规律所作的往复运动},sort=jianxie}
+
+\newpage\setcounter{page}{3}
+第~3 页：重力加速度\glossary{name={重力加速度},%
+description={由地心引力和地球自转引起的离心力的合力造成物体在真空中下落的加速度},sort=zhongli}
+
+\descriptionwidth=28mm
+\renewcommand{\glossaryname}{术语表}
+\renewcommand{\entryname}{术语}
+\renewcommand{\descriptionname}{说明}
+\renewcommand{\glspageheader}{页码}
+\printglossary
+
+\end{document}

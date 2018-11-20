@@ -1,0 +1,19 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=45mm,text={62mm,69mm},left=1.5mm,top=3pt]{geometry}
+\usepackage[space]{ctex}
+\renewcommand{\rmdefault}{ptm}
+
+\begin{document}
+\newenvironment{Mylist}[4][$\bullet$]{%
+\begin{list}{#1}{\topsep=0pt\itemsep=0pt\parsep=0pt\partopsep=0pt%
+\itemindent=#2\leftmargin=#3%
+\rightmargin=#4}}{\end{list}}
+\begin{Mylist}{0mm}{5mm}{9mm}
+\item 对每一相互作用总存在一个相等的反作用。
+\item 摩擦力正比于正压力，与接触面积无关。
+\end{Mylist}
+\begin{Mylist}[$\star$]{2em}{8mm}{0mm}
+\item 在所有惯性系中力学定律都是相同的。
+\item 力学定律在伽利略变换之下是不变的。
+\end{Mylist}
+\end{document}

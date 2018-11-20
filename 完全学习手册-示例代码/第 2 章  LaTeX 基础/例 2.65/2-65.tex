@@ -1,0 +1,11 @@
+\documentclass{book}
+\usepackage{ifthen,afterpage,graphicx,lipsum} % lipsum是专用于填充版面的宏包
+\begin{document}
+
+\setcounter{page}{21} % 任意设定页码的奇偶，查看插图是否总在偶数页中。
+
+\lipsum[1-3]
+\afterpage{\clearpage\ifthenelse{\isodd{\value{page}}}{\afterpage{\input{myfigure}}}{\input{myfigure}}}
+\lipsum[7-18]
+
+\end{document}

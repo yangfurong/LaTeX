@@ -1,0 +1,24 @@
+\documentclass[14pt]{beamer}
+\usetheme[height=12mm]{Rochester}
+\useinnertheme[shadow]{rounded}
+\beamersetaveragebackground{black!10}
+\usepackage[space,noindent]{ctex}
+\linespread{1.0}
+\begin{document}
+\kaishu
+\begin{frame}
+\frametitle{彩色盒子}
+\setbeamercolor{mycolor}{fg=black,bg=pink}
+如果正整数 $x,y,z$ 能够满足下列不定方程：\\
+\centerline{\begin{beamercolorbox}[rounded=true,shadow=true,wd=26mm]{mycolor}
+$x^{2}+y^{2}=z^{2}$
+\end{beamercolorbox}}
+则它们叫做勾股数。\\[20pt]
+圆周率\hspace{2pt}
+\raisebox{-2mm}{%
+\begin{beamercolorbox}[rounded=true,shadow=true,wd=19mm]{mycolor}
+$\pi=3.14$
+\end{beamercolorbox}}\hspace{3pt}
+是圆周与直径之比。
+\end{frame}
+\end{document}

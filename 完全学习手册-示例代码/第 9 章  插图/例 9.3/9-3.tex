@@ -1,0 +1,17 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=30mm,text={62mm,60mm},left=1.5mm,top=5pt]{geometry}
+\usepackage{ctexcap}
+\usepackage[labelfont=bf,labelsep=quad]{caption}
+  \DeclareCaptionFont{kai}{\kaishu}
+  \captionsetup{textfont=kai}
+\usepackage{graphicx}
+\begin{document}
+\setcounter{chapter}{3}
+\songti
+
+这张图是~PDF 格式的图形。
+\begin{figure}[!ht]\centering
+\includegraphics{graphics.pdf}
+\caption{插图标题}
+\end{figure}
+\end{document}

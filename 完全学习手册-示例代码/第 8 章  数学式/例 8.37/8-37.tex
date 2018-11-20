@@ -1,0 +1,14 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=30mm,text={62mm,80mm},left=1.5mm,top=-20pt]{geometry}
+\usepackage{amsmath}
+\begin{document}
+\setcounter{chapter}{2}
+
+\begin{gather}
+x^2+y^2 = z^2 \label{eq:r2} \\
+x^3+y^3 = z^3 \notag \\
+x^4+y^4 = r^4 \tag{$*$} \\
+x^5+y^5 = r^5 \tag*{$*$} \\
+x^6+y^6 = r^6 \tag{\ref{eq:r2}$'$}
+\end{gather}
+\end{document}

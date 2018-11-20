@@ -1,0 +1,27 @@
+\documentclass[12pt]{beamer}
+\usetheme[height=10mm]{Rochester}
+\useinnertheme[shadow]{rounded}
+\beamersetaveragebackground{black!10}
+\usepackage[space,noindent]{ctex}
+\linespread{1.0}
+\begin{document}
+\kaishu
+\begin{frame}
+\frametitle{将一帧分为两栏}
+\texttt{columns} 环境可以将一帧分成多栏，通常为两栏，%
+这样便于在插图旁边放置说明文字。
+\begin{columns}[onlytextwidth]
+\begin{column}{.55\textwidth}
+\includegraphics[width=\columnwidth]{fig9.pdf}
+\end{column}
+\begin{column}{.45\textwidth}
+左图是微带线四周电场与磁场的分布情况，其中：
+\begin{itemize}
+\item 红线为磁力线
+\item 蓝线是电力线
+\item 刻度单位为毫米
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+\end{document}

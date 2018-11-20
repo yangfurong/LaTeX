@@ -1,0 +1,21 @@
+\documentclass{book}
+\usepackage[paperwidth=65mm,paperheight=71mm,text={62mm,60mm},left=1.5mm,top=1pt]{geometry}
+\usepackage{ctexcap}
+\CTEXsetup[beforeskip={-23pt}]{chapter}
+\renewcommand{\rmdefault}{ptm}
+\usepackage{makeidx}
+  \makeindex
+\pagestyle{plain}
+
+\newcommand{\Com}[1]{\texttt{\symbol{92}#1}%
+                     \index{1@\textbf{命令}!#1@\texttt{\symbol{92}#1}}}
+\newcommand{\Pac}[1]{\textsf{#1}%
+                     \index{2@\vspace{2ex}\textbf{宏包}!#1@\textsf{#1}}}
+\newcommand{\Env}[1]{\texttt{#1}%
+                     \index{3@\vspace{2ex}\textbf{环境}!#1@\texttt{#1}}}
+\begin{document}
+\setcounter{page}{9}
+表格宏包~\Pac{longtable} 提供了一个可以排版多页表格的表格环境~\Env{longtable} 以及~\Com{LTleft} 等控制命令。
+
+\printindex
+\end{document}
