@@ -13,6 +13,21 @@ focus on contents. The way of using \TeX{} to make a document is somewhat simila
 to programming, writing files which consist of commands and texts under 
 specific grammar rules and then compiling these files to a printable document.
 
+\begin{figure}[!htbp]
+    \centering
+    \begin{tikzpicture}
+        \begin{loglogaxis}[
+        title=Convergence Plot,
+        xlabel={Degrees of freedom},
+        ylabel={$L_2$ Error},
+        ]
+        \addplot table {data_d2.dat};
+        \end{loglogaxis}
+    \end{tikzpicture}
+    \caption{An example picture produced by pgfplot}
+    \label{fig:pgfplot}  
+\end{figure}
+
 %TODO: unset the indent
 In order to make \TeX{} eaisier to use, \index{Dr.~Lamport} developed an extendable macro 
 library based on the original \TeX{}, which is the \LaTeX.

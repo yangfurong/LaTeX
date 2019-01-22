@@ -7,12 +7,40 @@
 \usepackage{lipsum}
 \usepackage{array}
 \usepackage{blindtext}
+\usepackage{nameref}
+\usepackage{pgfplots}
+\usepackage{titleref}
+%\usepackage{showkeys}
 \usepackage{enumitem}
+\usepackage[pagebackref]{hyperref}
+\usepackage{etoolbox}
+\usepackage[center,sc]{titlesec}
+
+%customizing sectioning cmd
+
+%\makeatletter
+%\renewcommand{\section}{\@startsection{section}{4}{2pt}{-4pt}{4pt}{\Large\itshape\sffamily\centering}}
+%\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\thesection.~\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection \quad \alph{subsubsection}}
+
+\patchcmd{\section}{\Large}{\huge}{}{}
+\patchcmd{\subsection}{\large}{\Large}{}{}
+
+
+
+%\bibliographystyle{acm}
 \makeindex
 
 \title{Notes of Learning \LaTeXe}
 \author{Smile\thanks{UPMC} and Sob\thanks{UCAS}}
 \date{\today}
+
+\titlelabel{\thetitle \ --\ }
 
 \begin{document}
 \maketitle
@@ -87,9 +115,40 @@ The only purpose of this ``Preamble'' chapter appearing here is to test
 
 \chapter{22nd November}
 
+\input{ch3}
+
 \chapter{29th November}
 
+\input{ch4}
+
 \chapter{6th December}
+
+\begin{thebibliography}{100}
+\bibitem{bib:alisa00} M.~Alisa;
+        ``Game theory application'';
+        IXE, \textbf{9999}, p. 123-124 (0000);
+        It is very inconvenient to edit bibitems by myself.
+        
+\bibitem{bib:alisa01} M.~Alisa;
+``Game theory application'';
+IXE, \textbf{9999}, p. 123-124 (0000);
+It is very inconvenient to edit bibitems by myself.
+
+\bibitem{bib:alisa02} M.~Alisa;
+        ``Game theory application'';
+        IXE, \textbf{9999}, p. 123-124 (0000);
+        It is very inconvenient to edit bibitems by myself.
+        
+\bibitem{bib:alisa03} M.~Alisa;
+``Game theory application'';
+IXE, \textbf{9999}, p. 123-124 (0000);
+It is very inconvenient to edit bibitems by myself.
+
+\bibitem{bib:alisa04} M.~Alisa;
+        ``Game theory application'';
+        IXE, \textbf{9999}, p. 123-124 (0000);
+        It is very inconvenient to edit bibitems by myself.
+\end{thebibliography}
 
 \appendix
 \chapter{Random Thoughts}
